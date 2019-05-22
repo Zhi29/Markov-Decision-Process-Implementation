@@ -164,8 +164,8 @@ def main():
     a=next_state(s_0,act,0)
     discount=0.9
     start=time.time()
-    policy=value_iteration(discount)
-    #policy=policy_iteration(policylibrary,discount)
+    #policy=value_iteration(discount)
+    policy=policy_iteration(policylibrary,discount)
     end=time.time()
     print("run time is: " ,(end-start))
     traj=trajectory(policy,s_0,0)
